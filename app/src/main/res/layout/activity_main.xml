@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/relMain"
+    tools:context="com.crystyanoalmeida.crudretrofit.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:id="@+id/rel1">
+
+        <ImageView
+            android:id="@+id/life"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/life"/>
+    </RelativeLayout>
+    <include layout="@layout/content_main" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel1"
+        android:id="@+id/relLayout2"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_person"
+            android:id="@+id/ivPerson"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivPerson"
+            android:inputType="textNoSuggestions"
+            android:textSize="16sp"
+            android:id="@+id/etName"
+            android:hint="@string/hintname"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relLayout2"
+        android:id="@+id/relLayout3"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_age"
+            android:id="@+id/ivAge"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivAge"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:id="@+id/etAge"
+            android:hint="@string/hintage"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relLayout3"
+        android:id="@+id/relLayout4"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_phone"
+            android:id="@+id/ivPhone"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivPhone"
+            android:inputType="number|phone"
+            android:textSize="16sp"
+            android:id="@+id/etPhone"
+            android:hint="@string/hintphone"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relLayout4"
+        android:id="@+id/relLayout5"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_mail"
+            android:id="@+id/ivMail"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivMail"
+            android:inputType="textWebEmailAddress"
+            android:textSize="16sp"
+            android:id="@+id/etMail"
+            android:hint="@string/hintmail"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relLayout5"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnsave"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:showOutline="false"
+            app:roundedCorners="true"
+            android:id="@+id/btnSave"/>
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:bootstrapText="@string/btnlist"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:showOutline="false"
+            app:roundedCorners="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnListAll"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

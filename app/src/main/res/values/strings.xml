@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Crud Using the Retrofit</string>
+
+    <string name="btnsave">Save</string>
+    <string name="btnlist">List All</string>
+    <string name="btncancel">Cancel</string>
+    <string name="hintname">Your Name</string>
+    <string name="hintage">Your Age</string>
+    <string name="hintphone">Your Phone Number</string>
+    <string name="hintmail">Your Mail</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>
